@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darina Vischik — Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">DARINA VISCHIK</a>
+            <nav class="header__nav">
+                <a href="#hero" class="header__link header__link--active">Главная</a>
+                <a href="#about" class="header__link">Обо мне</a>
+                <a href="#works" class="header__link">Работы</a>
+                <a href="#contacts" class="header__link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">МОЁ<br>ПОРТФОЛИО</h1>
+                <div class="hero__text-block">
+                    <p class="hero__subtitle">Создаю современные и удобные digital-продукты. Дизайн, который работает на результат.</p>
+                    <a href="#works" class="hero__btn">
+                        <svg width="40" height="20" viewBox="0 0 40 20" fill="none">
+                            <line x1="0" y1="10" x2="35" y2="10" stroke="#fff" stroke-width="2"/>
+                            <polyline points="30,4 36,10 30,16" stroke="#fff" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__photo"></div>
+            <div class="about__info">
+                <h2 class="about__title">ОБО МНЕ</h2>
+                <p class="about__text">Привет! Меня зовут Дарина. Я — дизайнер с опытом работы более 3 лет. Специализируюсь на создании лендингов, интерфейсов для мобильных приложений и фирменных стилей.</p>
+                <div class="about__stats">
+                    <div class="stat-card">
+                        <svg class="stat-card__icon" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4C10 4 6 8 6 14C6 22 16 28 16 28C16 28 26 22 26 14C26 8 22 4 16 4Z" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                        <span class="stat-card__text">3 года в<br>дизайне</span>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-card__icon" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="10" r="5" stroke="#333" stroke-width="1.5"/>
+                            <path d="M6 28C6 22 10 18 16 18C22 18 26 22 26 28" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                        <span class="stat-card__text">довольных<br>клиентов 50+</span>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-card__icon" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L20 12L16 10L12 12L16 4Z" stroke="#333" stroke-width="1.5"/>
+                            <path d="M16 28L12 20L16 22L20 20L16 28Z" stroke="#333" stroke-width="1.5"/>
+                            <path d="M4 16L12 12L10 16L12 20L4 16Z" stroke="#333" stroke-width="1.5"/>
+                            <path d="M28 16L20 20L22 16L20 12L28 16Z" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                        <span class="stat-card__text">работаю<br>удаленно по<br>всему миру</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__container">
+            <h2 class="skills__title">МОИ НАВЫКИ</h2>
+            <p class="skills__subtitle">Владею полным циклом создания дизайна: от исследования до прототипа и финальной верстки.</p>
+            <div class="skills__flow">
+                <div class="skill-item">Дизайн мобильных<br>приложений</div>
+                <span class="skill-arrow">—</span>
+                <div class="skill-item">Веб-дизайн<br>(Landing Page)</div>
+                <span class="skill-arrow">—</span>
+                <div class="skill-item">Создание<br>прототипов и<br>вайрфреймов</div>
+                <span class="skill-arrow">—</span>
+                <div class="skill-item">Брендинг и<br>айдентика</div>
+                <span class="skill-arrow">→</span>
+                <div class="skill-item">Графический<br>дизайн и<br>иллюстрация</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="works__container">
+            <h2 class="works__title">Мои работы</h2>
+            <div class="works__filters">
+                <button class="filter-btn filter-btn--active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="logo">Логотипы</button>
+                <button class="filter-btn" data-filter="site">Сайты</button>
+            </div>
+            <div class="works__grid">
+                <div class="work-card" data-category="app">Мобильное приложение для фитнеса</div>
+                <div class="work-card" data-category="site">Сайт архитектурного бюро</div>
+                <div class="work-card" data-category="logo">Ребрендинг кофейни</div>
+                <div class="work-card" data-category="site">Интернет-магазин косметики</div>
+                <div class="work-card" data-category="site">Лендинг для IT-курсов</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <div class="process__container">
+            <h2 class="process__title">КАК Я РАБОТАЮ</h2>
+            <div class="process__steps">
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+                            <circle cx="24" cy="24" r="18" stroke="#333" stroke-width="1.5"/>
+                            <polyline points="16,24 22,30 32,18" stroke="#333" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="step__text">Обсуждаем<br>задачи</span>
+                </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+                            <circle cx="24" cy="24" r="18" stroke="#333" stroke-width="1.5"/>
+                            <polyline points="24,14 24,24 30,24" stroke="#333" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <span class="step__text">Утверждаем<br>смету</span>
+                </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+                            <rect x="10" y="10" width="28" height="28" rx="2" stroke="#333" stroke-width="1.5"/>
+                            <line x1="10" y1="20" x2="38" y2="20" stroke="#333" stroke-width="1.5"/>
+                            <line x1="20" y1="10" x2="20" y2="38" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="step__text">Создаю<br>прототип</span>
+                </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+                            <rect x="8" y="12" width="14" height="24" rx="3" stroke="#333" stroke-width="1.5"/>
+                            <rect x="26" y="12" width="14" height="24" rx="3" stroke="#333" stroke-width="1.5"/>
+                            <path d="M22 24H26" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="step__text">Отрисовываю<br>дизайн</span>
+                </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 48 48" fill="none" width="48" height="48">
+                            <rect x="12" y="8" width="24" height="32" rx="2" stroke="#333" stroke-width="1.5"/>
+                            <line x1="18" y1="16" x2="30" y2="16" stroke="#333" stroke-width="1.5"/>
+                            <line x1="18" y1="22" x2="30" y2="22" stroke="#333" stroke-width="1.5"/>
+                            <line x1="18" y1="28" x2="26" y2="28" stroke="#333" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <span class="step__text">Передаю<br>проект</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="contacts__container">
+            <div class="contacts__info">
+                <h2 class="contacts__title">Контакты</h2>
+                <p class="contacts__subtitle">Есть идея или проект? Давайте обсудим!</p>
+                <div class="contacts__details">
+                    <p>Email: hello@darina.design</p>
+                    <p>Telegram: @darina_design</p>
+                </div>
+            </div>
+            <form class="contacts__form" onsubmit="return false;">
+                <div class="form-row">
+                    <input type="text" placeholder="Ваше имя" class="form-input">
+                    <input type="email" placeholder="Ваш Email" class="form-input">
+                </div>
+                <textarea placeholder="Сообщение" class="form-input form-textarea"></textarea>
+                <button type="submit" class="form-btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
